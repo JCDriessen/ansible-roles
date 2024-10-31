@@ -1,0 +1,16 @@
+---
+- name: ensure php is installed
+  apt: 
+    name: php8.1-fpm
+    state: present 
+    update_cache: yes
+- name: install php-mysql
+  apt: 
+    name: php8.1-mysql 
+    state: present 
+    update_cache: yes
+- name: Start php service (php-mysql)
+  service: 
+    name: php8.1-fpm
+    state: started 
+    enabled: true

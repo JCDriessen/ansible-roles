@@ -1,0 +1,16 @@
+---
+- name: Install php
+  apt: 
+    name: php8.1
+    state: present 
+    update_cache: yes
+- name: Install php-fpm
+  apt: 
+    name: php8.1-fpm
+    state: present 
+    update_cache: yes
+- name: Start php service
+  service: 
+    name: php8.1-fpm
+    state: started 
+    enabled: true

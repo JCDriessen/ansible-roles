@@ -1,0 +1,18 @@
+---
+- include_tasks: apache.yml
+  name: Install Apache if hostname is webserver
+  when: ansible_hostname.startswith('ws')
+
+- include_tasks: php.yml
+  name: Install PHP if hostname is webserver
+  when: ansible_hostname.startswith('ws')
+
+- include_tasks: php-mysql.yml
+  name: Install PHP MySQL if hostname is webserver
+  when: ansible_hostname.startswith('ws')
+
+- include_tasks: mysql.yml
+  name: Install MySQL if hostname is database
+  when: ansible_hostname.startswith('db')
+  
+

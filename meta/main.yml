@@ -1,6 +1,7 @@
 ---
 galaxy_info:
   role_name: test-install-lamp
+  namespace: JCDriessen
   author: s1156387
   description: A test role uploaded to ansible galaxy to learn how to use it
   license: Apache

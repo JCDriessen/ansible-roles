@@ -1,2 +1,18 @@
 ---
+galaxy_info:
+  role_name: test-install-lamp
+  author: s1156387
+  description: A test role uploaded to ansible galaxy to learn how to use it
+  license: Apache
+  min_ansible_version: 2.0
+  platforms:
+  - name: Ubuntu
+    versions:
+    - noble
+    - jammy
+    - focal
+  galaxy_tags:
+    - cvmfs
+    - filesystem
+    - snapshotter
 dependencies: []

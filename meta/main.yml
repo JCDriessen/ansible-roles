@@ -11,8 +11,4 @@ galaxy_info:
     - noble
     - jammy
     - focal
-  galaxy_tags:
-    - cvmfs
-    - filesystem
-    - snapshotter
 dependencies: []
